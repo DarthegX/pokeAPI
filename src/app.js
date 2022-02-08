@@ -12,7 +12,8 @@ server.use(express.urlencoded({ extended: true }));
 //this.server.use(cookieParser());
 server.use('/pokemon', indexRouter);
 server.listen(777, () => {
-    console.log('Poke Server started!\n\n');
+    console.log('Poke Server started! :)\n');
+    console.log('By Elena Garrigos');
 });
 
 export default server;
