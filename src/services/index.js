@@ -32,7 +32,6 @@ class PokeService {
                     power: response.data.power
                 }
 
-                console.log(move)
                 resolve(move);
             }).catch((err) => {
                 console.log('ERORR GETTING MOVE: ', err);

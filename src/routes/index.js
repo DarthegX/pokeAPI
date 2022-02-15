@@ -4,32 +4,6 @@ import PokeService from '../services/index.js';
 const indexRouter = express.Router();
 const pokeService = new PokeService();
 
-/**
- * @swagger
-   components:
-     schemas:
-       Pokemon:
-         type: object
-         required:
-           - id
-           - name
-           - moves
-         properties:
-           id:
-             type: integer
-             description: The identifier of the Pokemon.
-            name:
-             type: string
-             description: The name of the Pokemon.
-           moves:
-             type: PokemonMove
-             description: A list of moves along with learn methods and level details pertaining to specific version groups.
-         example:
-            id: 4
-            name: Charmander
-            moves: []
- */
-
             
 /** 
  * @swagger 
@@ -38,7 +12,7 @@ const pokeService = new PokeService();
  *     description: Get checking of Poke Server
  *     responses:  
  *       200: 
- *         description: Success  
+ *       description: Success  
  *   
  */ 
 indexRouter.get('/', (req, res) => {
@@ -48,15 +22,14 @@ indexRouter.get('/', (req, res) => {
 
 /** 
  * @swagger 
- * /:name: 
+ * /{name}: 
  *   get: 
  *     description: Get information about a pokemon
  *     url parameters: 
- *     - name: PokemonName 
+ *       - name: PokemonName 
  *     responses:  
  *       200: 
  *         description: Success
- *   
  */
 indexRouter.get('/:name', (req, res) => {
   const { name } = req.params;
