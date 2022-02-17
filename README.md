@@ -8,7 +8,7 @@
 
 ## Install
 
-- Clone repository with `git clone https://github.com/DarthegX/pokeAPI.git`
+- Clone repository with `git clone https://gitlab.com/Dartheg/pokeAPI.git`
 
 - Use `npm install` to install project dependencies.
 
