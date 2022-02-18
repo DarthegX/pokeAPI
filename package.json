@@ -1,7 +1,7 @@
 {
   "name": "pokeapi",
   "version": "1.0.0",
-  "description": "Backend test for ORDATIC",
+  "description": "Backend application to get Pokemon info",
   "main": "app.js",
   "type": "module",
   "testEnvironment": "node",
